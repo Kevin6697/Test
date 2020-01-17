@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div id="mainContainer">
+      <div id="formId">
+        <form method="post">
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <br />
+          <br />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <br />
+          <br />
+          <input type="password" name="pwd" id="pwd" placeholder="Password" />
+          <br />
+          <br />
+          <input
+            type="password"
+            name="confpwd"
+            id="confpwd"
+            placeholder="Confirm Password"
+          />
+          <br />
+          <br />
+          <select name="city" id="city">
+            <option hide>Select City</option>
+            <option value="Ahemdabad">Ahemdabad</option>
+            <option value="Surendranagar">Surendranagar</option>
+            <option value="Vadodara">Vadodara</option>
+          </select>
+          <br />
+          <br />
+          <select name="state" id="state">
+            <option hide>Select State</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Kerela">Kerela</option>
+          </select>
+          <br />
+          <br />
+          <input type="checkbox" name="tac" id="tac"/>Terms and Conditions
+          <br />
+          <br />
+          <input type="button" value="Register"  onclick="registerData();"/>
+        </form>
+      </div>
+      <p id="errorDisplay"></p>
+    </div>
+    <script src="registerScript.js"></script>
+  </body>
+</html>
